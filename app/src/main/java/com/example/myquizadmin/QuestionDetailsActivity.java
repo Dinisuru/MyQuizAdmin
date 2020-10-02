@@ -110,14 +110,11 @@ public class QuestionDetailsActivity extends AppCompatActivity {
                     answer.setError("Enter Answer Number");
                     return;
                 }
-
                 if(!answer.getText().toString().matches("[1-4]{1}")){
 
                     answer.setError("Enter Answer Number Between 1 and 4");
                     return;
-
                 }
-
                 if(action.compareTo("EDIT") == 0) {
 
                     editQuestion();

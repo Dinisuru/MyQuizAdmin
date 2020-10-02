@@ -48,6 +48,7 @@ public class CategoryActivity extends AppCompatActivity {
     private Button dialogAddButton;
     private CategoryAdapter adapter;
     private FirebaseAuth firebaseAuth;
+    private long backPressedTime;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -270,5 +271,16 @@ public class CategoryActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    @Override
+    public void onBackPressed() {
+        if (backPressedTime + 2000 > System.currentTimeMillis()) {
+            finish();
+        } else {
+            Toast.makeText(this, "Press back again to Exit", Toast.LENGTH_SHORT).show();
+        }
+        backPressedTime = System.currentTimeMillis();
+    }
+
 
 }
