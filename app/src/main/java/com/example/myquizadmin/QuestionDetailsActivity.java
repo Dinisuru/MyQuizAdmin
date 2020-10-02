@@ -37,6 +37,7 @@ public class QuestionDetailsActivity extends AppCompatActivity {
     private FirebaseFirestore firestore;
     private String action;
     private int qID;
+    private long backPressedTime;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -253,5 +254,18 @@ public class QuestionDetailsActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public void onBackPressed() {
+        if (backPressedTime + 2000 > System.currentTimeMillis()) {
+            Intent intent = new Intent(QuestionDetailsActivity.this,QuestionsActivity.class);
+            startActivity(intent);
+            finish();
+        } else {
+            Toast.makeText(this, "Press again to go back ", Toast.LENGTH_SHORT).show();
+        }
+        backPressedTime = System.currentTimeMillis();
+    }
+
+
 
 }
