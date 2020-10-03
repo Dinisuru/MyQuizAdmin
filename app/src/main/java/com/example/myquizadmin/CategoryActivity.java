@@ -80,8 +80,6 @@ public class CategoryActivity extends AppCompatActivity {
         firestore = FirebaseFirestore.getInstance();
         firebaseAuth = FirebaseAuth.getInstance();
 
-
-
         addCatButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -100,7 +98,6 @@ public class CategoryActivity extends AppCompatActivity {
 
                     dialogCatName.setError("Enter Category Name");
                     return;
-
                 }
 
                 addNewCategory(dialogCatName.getText().toString());
@@ -144,7 +141,6 @@ public class CategoryActivity extends AppCompatActivity {
 
                         adapter = new CategoryAdapter(catList);
                         cat_recycle_view.setAdapter(adapter);
-
 
                     }
                     else{
@@ -281,6 +277,4 @@ public class CategoryActivity extends AppCompatActivity {
         }
         backPressedTime = System.currentTimeMillis();
     }
-
-
 }
