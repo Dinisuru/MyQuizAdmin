@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
                         @Override
                         public void onFailure(@NonNull Exception e) {
 
-                            Toast.makeText(MainActivity.this,"Error",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this,"Error Check internet connection",Toast.LENGTH_SHORT).show();
                             loadingdialog.dismiss();
 
                         }
