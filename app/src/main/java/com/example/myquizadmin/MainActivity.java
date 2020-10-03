@@ -63,8 +63,8 @@ public class MainActivity extends AppCompatActivity {
 
                             if(task.isSuccessful()){
                                 //sign in complete
-                                Toast.makeText(MainActivity.this,"Logged in Successfull!",Toast.LENGTH_SHORT).show();
-                                Intent intent = new Intent(MainActivity.this,CategoryActivity.class);
+                                //Toast.makeText(MainActivity.this,"Logged in Successfull!",Toast.LENGTH_SHORT).show();
+                                //Intent intent = new Intent(MainActivity.this,CategoryActivity.class);
                                 startActivity(intent);
                                 loadingdialog.dismiss();
                                 finish();
