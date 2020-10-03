@@ -37,7 +37,7 @@ import java.util.Map;
 
 
 public class CategoryActivity extends AppCompatActivity {
-//supun
+
     private RecyclerView cat_recycle_view;
     private Button addCatButton;
     public static List<CategoryModel> catList = new ArrayList<>();

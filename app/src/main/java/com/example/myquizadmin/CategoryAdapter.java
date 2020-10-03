@@ -163,7 +163,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
             });
 
         }
-
+           //Delete category.....
         private void deleteCategory(final int id , final Context context, final CategoryAdapter adapter){
 
             loadingdialog.show();
