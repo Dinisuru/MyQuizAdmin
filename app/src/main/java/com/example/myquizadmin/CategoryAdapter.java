@@ -211,7 +211,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
 
 
         }
-        //Update....
+        //Update category....
         private void updateCategory(final String catNewName, final int position, final Context context, final CategoryAdapter adapter){
 
             editDialog.dismiss();
