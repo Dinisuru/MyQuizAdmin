@@ -131,9 +131,6 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
                 }
             });
 
-
-
-
             deleteB.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -208,8 +205,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
 
                 }
             });
-
-
+            
         }
         //Update category....
         private void updateCategory(final String catNewName, final int position, final Context context, final CategoryAdapter adapter){

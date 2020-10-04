@@ -86,7 +86,6 @@ public class CategoryActivity extends AppCompatActivity {
 
                 dialogCatName.getText().clear();
                 addCatDialog.show();
-
             }
         });
 
@@ -103,7 +102,6 @@ public class CategoryActivity extends AppCompatActivity {
                 addNewCategory(dialogCatName.getText().toString());
             }
         });
-
 
         LinearLayoutManager layoutManager =new LinearLayoutManager(this);
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
@@ -163,7 +161,6 @@ public class CategoryActivity extends AppCompatActivity {
         });
 
     }
-
 
     private void addNewCategory(final String title){
 
@@ -238,7 +235,6 @@ public class CategoryActivity extends AppCompatActivity {
         }
 
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

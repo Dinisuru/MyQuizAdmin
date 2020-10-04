@@ -42,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
         loadingdialog.getWindow().setBackgroundDrawableResource(R.drawable.progress_background);
         loadingdialog.getWindow().setLayout(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
 
-
         firebaseAuth = FirebaseAuth.getInstance();
 
         login.setOnClickListener(new View.OnClickListener() {
